@@ -41,7 +41,8 @@ body {
   height: 60px;
   border-radius: 30px;
   flex: 1;
-  margin-right: 0.3rem;
+  /* margin-right: 0.3rem; */
+  margin-right: -2.7rem;
   font-size: 18px;
 }
 .searchBox button {
@@ -87,7 +88,7 @@ body {
 }
 .humidity, .wind{
     font-size: 1.75rem;
-    margin-top: -6px;
+    margin-top: 15px;
 }
 .weather{
   display: none;
@@ -98,4 +99,39 @@ body {
   font-size: 0.8rem;
   margin-top: 10px;
   display: none;
+}
+@media screen and (max-width:400px){
+  .card{
+    padding: 40px 25px;
+  }
+  .search{
+    width:250Px;
+  }
+  .inp{
+    width: 300px;
+    /* margin-right: 1.3rem; */
+  }
+  .searchBox button {
+    width:60px;
+    height: 60px;
+    background: transparent;
+  }
+  .col{
+    font-size: 1.2rem;
+  }
+  .col img{
+    width: 2.2rem;
+  }
+  .details{
+    padding: 1px;
+  }
+}
+@media screen and (max-width:378px) {
+  .inp{
+    width: 250px;
+    margin-right: 0.7rem;
+  }
+  .details{
+    margin-top: 6px;
+  }
 }
